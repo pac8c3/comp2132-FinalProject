@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lan="en">
+
+    <head>
+        <title>Home Page | COMP - 2132</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="scripts/scripts.js" defer="defer"></script>
+    </head>
+
+    <body>
+        <div>
+            <div>
+                <header>
+                    <nav>
+                        <div>
+                            <h1>Chrorius, The Darkmaster<br> A Dice Game</h1>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            
+
+            <div id="wrapper">
+                
+                <main>
+                    <div class="grid-double-column-full-screen">
+
+                        <section>
+                            <div id="player-char" class="grid-single-row">
+                                <div>
+                                    <p>You</p>
+                                    <img class="img-player-monster" src="images/fighter-01-rsz.png" alt="">
+                                </div>
+        
+                                <div>
+                                    <div>
+                                        <p>Your Dices</p>
+                                        <div class="grid-double-column">
+                                            <div>
+                                                <p>Dice 1</p>
+                                                <p id="dice-1"></p>
+                                                
+                                            </div>
+                                            <div>
+                                                <p>Dice 2</p>
+                                                <p id="dice-2"></p>
+                                            
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+        
+                                
+        
+                                <div>
+                                    <div>
+                                        <p>Your Score</p>
+                                        <div class="grid-double-column-score">
+                                            <div>
+                                                <p>Score this round</p>
+                                                <p id="player-score">0</p>
+                                            </div>
+                                            <div>
+                                                <p>Total Score</p>
+                                                <p id="player-total-score">0</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <section>
+                            <div id="monster-char" class="grid-single-row">
+                                <div>
+                                    <p id="monster-name">Brakdrak, The Insane</p>
+                                    <img class="img-player-monster" src="images/monster-1-rsz.jpg" alt="" id="monster-image">
+                                </div>
+        
+                                <div>
+                                    <div>
+                                        <p>Monster's Dices</p>
+                                        <div class="grid-double-column">
+                                        <div>
+                                            <p >Dice 1</p>
+                                            <p id="dice-3"></p>
+                                        </div>
+                                        <div>
+                                            <p>Dice 2</p>
+                                            <p id="dice-4"></p>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                    
+                                    
+                                </div>
+        
+                                <div>
+                                    <p>Monster's Score</p>
+                                    <div class="grid-double-column-score">
+                                        <div>
+                                            <p>Score this round</p>
+                                            <p id="monster-score">0</p>
+                                        </div>
+                                        <div>
+                                            <p>Total Score</p>
+                                            <p id="monster-total-score">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </div>
+
+                    <section>
+                        <div class="button-alignment">
+                            <button id="roll-button">Roll</button>
+                            <button id="new-game-button">New Game</button>
+                        </div>
+                    </section>
+
+                    <section>
+                        <article>
+                            <p>Rules</p>
+                            <ul>
+                                <li>3 rounds per monster - 5 levels/monsters</li>
+                                <li>Win the fight to go to the next level</li>
+                                <li>Reach Chrorius, The Darkmaster</li>
+                                <li>Do not die</li>
+                            </ul>
+                            <p>Scoring</p>
+                            <ul>
+                                <li>If any of the player/monster two dice comes up as a 1 then the score for that round for the player/monster is 0</li>
+                                <li>If the player/monster rolls a pair of the same numbers then the player/monster score is the total of the two dice times 2</li>
+                                <li>If the player/monster rolls any other combination of dice other than the ones mentioned above then the player/monster score is the total value of the two dice</li>
+                            </ul>
+                        </article>
+                    </section>
+
+
+                    <aside id="game-over">
+                        <div class="aside-alignment">
+                            <p class="text-aside-alignment">despite a fierce fight, you succumbed to the strength of your opponent...</p>
+                            <img  src="images/you-died-4.png" alt="">
+                                <div class="button-style">
+                                    <button id="close-game-over">X</button>
+                                </div>
+                        </div>
+                    </aside>
+
+                    
+    
+                    <aside id="next-level">
+                        <div class="aside-alignment">
+                            <p class="text-aside-alignment">Slowly, Gently, This Is How A Life Is Taken... You proceed to the next level</p>
+                            <img  src="images/dungeon-stairs-victory-2.jpg" alt="">
+                                <div class="button-style">
+                                    <button id="continue">Continue</button>
+                                </div>
+                        </div>
+                    </aside>
+
+                    <aside id="victory-screen">
+                        <div class="aside-alignment">
+                            <p class="text-aside-alignment">Chrorius is now dead and the village is back in peace... for now.</p>
+                            <img  src="images/victoryscreen.jpg" alt="">
+                                <div class="button-style">
+                                    <button id="close">X</button>
+                                </div>
+                        </div>
+                    </aside>
+                
+                </main>
+
+                 
+
+            </div>
+
+            <footer>
+                <p>COMP2132 - Final Project | Paul Cernea</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
